@@ -1,0 +1,17 @@
+işletim sisteminde çalışan uygulamaları birer process olarak adlandırabiliriz.
+bu processlerin yaptığı her bir iş parçacığına thread diyebiliriz
+threadler çalışırken birbirlerini beklemezler
+belirsizlik söz konusudur hangi thread ne zaman çalışacak belli değil
+thread objeleri belleğin heap kısmında yer alır
+her threadin kendine ait bir stack alanı oluşmaktadır
+main methodu çağrıldıgında main threadi oluşmaktadr
+jvm yönetir
+thread oluşturma
+    1) threads sınıfını extends ederek
+    2) runnable interfaceni iplement ederek
+run methodunu override ederek çalıştırabiliriz
+
+genelde single threading vardır
+ancak örneğin kullanıcı bir form üzerinden bir web isteği oluşturdugu zaman web isteği ceva verene kadar
+kullanıcı form üzerinde işlem yapamayacaktır bunun gibi durumlarda thread yapısı kullanmak daha efektif olur
+normalde bir iş bitmeden diğeri başlayamaz ama thread yapısı sayesinde aynı anda çalıştırabiliriz
